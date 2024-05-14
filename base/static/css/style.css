@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "MyFont1"; 
+    src: url("../font/myFont1.ttf"); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    box-sizing: border-box;
+
+}
+.full_container{
+    padding-top: 5rem;
+    background: url('../img/sandwich.jpg');
+    background-size: contain;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+   
+}
+.content{
+    width: 80%;
+    backdrop-filter: blur(10px);
+    border-radius: .5rem;
+    background-color:rgba(254, 253, 255, 0.251) ;
+    min-height:35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.content_add {
+    width: 80%;
+    backdrop-filter: blur(10px);
+    border-radius: .5rem;
+    background-color:rgba(254, 253, 255, 0.251) ;
+    min-height:35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.content_add form{
+    display: block;
+    margin-bottom: 2rem;
+}
+.content form > *{
+    display: block;
+}
+.content form > * > *{
+    display: block;
+}
+.content form > input[type='submit'],
+.content form  > * > textarea,
+.content form  > * > input,
+.content form  > * > select{
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.full_container > *{
+    position: relative;
+}
+.title{
+    /* border: 2px solid khaki; */
+    padding: 2rem 2%;
+    font-size: 2rem;
+    text-align: center;
+
+}
+.title span{
+    font-family: "MyFont1";
+    font-size: 3rem;
+    color:darkgoldenrod;
+}
+#itl{
+    font-family: "MyFont1";
+    font-size: 4rem;
+    color:rgb(255, 255, 255);
+}
+.btn_container{
+    display: flex;
+    justify-content: space-around;
+    width: 20rem;
+    padding: 2rem 2%;
+}
+.btn_container  a{
+    text-decoration: inherit;
+    color: inherit;
+
+    cursor: pointer;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    backdrop-filter: blur(10px);
+    border-radius: .5rem;
+    background-color:rgba(254, 253, 255, 0.251) ;
+    transition: all ease-in-out .5s;
+}
+.btn_container > *{
+    text-decoration: inherit;
+    color: inherit;
+
+    cursor: pointer;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    backdrop-filter: blur(10px);
+    border-radius: .5rem;
+    background-color:rgba(254, 253, 255, 0.251) ;
+    transition: all ease-in-out .5s;
+
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+    margin-left: 1rem;
+}
+.socials > a > svg{
+    transition: all ease-in-out .5s;
+}
+.btn_container > *:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.387);
+    color: darkgoldenrod;
+}
+
+.btn_container > *:hover,
+.socials > a > svg:hover{
+    transform: scale(2);
+    transform: translateY(-10px);
+}
+
+
+
+.footer_home{
+    height: 10rem;
+    width: 100%;
+    padding: 1rem auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    background-color:rgba(254, 253, 255, 0.251) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials{
+    min-width: 15rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.socials > a{
+    transition: all ease-in-out .5s;
+    color: inherit;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+/* about */
+.full_container-about{
+    padding-top: 5rem;
+    background: url('../img/sandwich.jpg');
+    background-size: contain;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-about span{
+    color: darkgoldenrod;
+}
+.content-about{
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    backdrop-filter: blur(10px);
+    border-radius: .5rem;
+    background-color:rgba(254, 253, 255, 0.251) ;
+    min-height: 25rem;
+    padding: 4rem 4%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+.about-soc{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border-radius: .5rem;
+    width: 20rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color:rgba(254, 253, 255, 0.251) ;
+
+}
+.content-about span{
+    display: inline;
+    font-size: 1.8rem;
+}
+
+@media (max-width: 968px){
+    .footer_home{
+        height: 5rem;
+        width: 100%;
+        padding: 1rem auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .full_container-about{
+        padding-top: 5rem;
+        background: url('../img/sandwich.jpg');
+        background-size: contain;
+        position: relative;
+        width: 100%;
+        height: 140vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.card__product .controls{
+    display: flex;
+    justify-content: space-around;
+  }
+  .controls > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all ease-in ease-out 1s;
+}
+.controls a > svg{
+    width: 2rem;
+    height: 2rem;
+  }
+  

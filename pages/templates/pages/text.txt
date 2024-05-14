@@ -1,0 +1,92 @@
+## Informations à mettre sur la page web du restaurant "BeniEast"
+
+**Page d'accueil**
+
+* **Bannière:**
+    * Photo de haute qualité du restaurant (intérieur ou extérieur)
+    * Logo du restaurant "BeniEast"
+    * Slogan du restaurant (optionnel)
+* **Informations pratiques:**
+    * Adresse du restaurant
+    * Numéro de téléphone
+    * Adresse e-mail
+    * Horaires d'ouverture
+    * Lien vers Google Maps (optionnel)
+* **Menu:**
+    * Bouton ou lien vers la page du menu
+    * Aperçu des plats phares (photos et descriptions courtes)
+* **Appel à l'action:**
+    * Bouton pour réserver une table
+    * Bouton pour commander en ligne (optionnel)
+* **Réseaux sociaux:**
+    * Liens vers les pages Facebook, Instagram, etc. du restaurant
+
+**Page du menu**
+
+* **Catégories de plats:**
+    * Entrées
+    * Plats principaux
+    * Desserts
+    * Boissons
+* **Descriptions détaillées des plats:**
+    * Nom du plat
+    * Ingrédients
+    * Prix
+    * Photo (optionnel)
+* **Filtres et options de recherche:**
+    * Par type de plat (végétarien, vegan, etc.)
+    * Par prix
+    * Par allergènes (optionnel)
+* **Informations complémentaires:**
+    * Allergènes et restrictions alimentaires
+    * Suggestions du chef (optionnel)
+    * Menu du jour (optionnel)
+
+**Autres pages**
+
+* **L'histoire du restaurant:**
+    * Concept du restaurant
+    * Philosophie culinaire
+    * Parcours du chef (optionnel)
+* **L'équipe:**
+    * Photos et descriptions des membres clés de l'équipe
+* **Galerie photos:**
+    * Photos de l'intérieur du restaurant
+    * Photos des plats
+    * Photos de l'équipe (optionnel)
+* **Actualités et événements:**
+    * Promotions en cours
+    * Offres spéciales
+    * événements à venir (optionnel)
+* **Contact:**
+    * Formulaire de contact
+    * FAQ (optionnel)
+
+**Informations générales**
+
+* **Qualité des photos:**
+    * Les photos doivent être de haute qualité et professionnelles
+    * Elles doivent mettre en valeur l'ambiance du restaurant et la qualité des plats
+* **Style du texte:**
+    * Le texte doit être clair, concis et facile à lire
+    * Il doit être cohérent avec l'image de marque du restaurant
+* **Chargement du site web:**
+    * Le site web doit se charger rapidement sur tous les appareils
+    * Il doit être optimisé pour les mobiles
+
+**En plus des informations citées ci-dessus, vous pouvez également ajouter :**
+
+* **Des avis clients**
+* **Un blog culinaire**
+* **Une boutique en ligne (optionnel)**
+* **Un service de livraison à domicile (optionnel)**
+
+**N'oubliez pas de mettre à jour régulièrement votre site web avec des informations nouvelles et des photos récentes.**
+
+**Conseils supplémentaires:**
+
+* **Utilisez un design attrayant et cohérent.**
+* **Assurez-vous que votre site web est facile à naviguer.**
+* **Proposez une version en anglais de votre site web si vous souhaitez attirer des touristes.**
+
+**En suivant ces conseils, vous pouvez créer un site web de restaurant qui permettra d'attirer de nouveaux clients et de fidéliser vos clients existants.**
