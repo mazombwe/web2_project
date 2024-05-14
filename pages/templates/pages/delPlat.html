@@ -1,0 +1,25 @@
+{% extends "base-template.html" %}
+
+{% load static %}
+
+
+{% block content %}
+
+    <div class="full_container">
+        <div class="content" style="padding: 3rem 3%;">
+            <h1>Confirmer la suppression  </h1>
+
+            <form method="post" action="{% url 'pages:delPlat' plat.id %}">
+                {% csrf_token %}
+                <input type="submit" value="Oui">
+            </form>
+
+            <a href="{% url "pages:menu" %}">
+                <button class=" btn btn--primary "> Non </button>    
+            </a>
+        </div>
+    </div>
+   
+{% endblock %} 
+
+ 
