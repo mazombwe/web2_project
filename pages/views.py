@@ -2,6 +2,7 @@ from django.shortcuts import get_object_or_404, render
 from flask import redirect
 from .models import *
 from .forms import *
+from django.core.paginator import Paginator
 
 # Create your views here.
 def home(request):
@@ -11,8 +12,11 @@ def home(request):
 def menu(request):
     titre = "Menu Plat"
     plats = Plat.objects.all()
+    paginate = Paginator(plats, 4)
+    paginate_number = request.GET.get("page")
+    pages = paginate.get_page(paginate_number)
 
-    return render(request, 'pages/menu.html', {"plats":plats , 'titre' : titre})
+    return render(request, 'pages/menu.html', {"plats":pages , 'titre' : titre})
 
 def log_plat(plat):
     with open('medicaments.log', 'a+') as f:
@@ -28,7 +32,7 @@ from django.shortcuts import redirect
 
 def addPlat(request):
     if request.method == "POST":
-        form = PlatForm(request.POST)
+        form = PlatForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             log_plat(form.instance)
@@ -45,7 +49,7 @@ def editPlat(request, platId):
     plat = get_object_or_404(Plat, id=platId)
 
     if request.method == "POST":
-        form = PlatForm(request.POST, instance=plat)
+        form = PlatForm(request.POST, request.FILES, instance=plat)
         if form.is_valid():
             form.save()
             return redirect('/menu')
@@ -74,3 +78,6 @@ def contact(request):
 
 def about(request):
     return render(request, 'pages/about.html')
+
+def user_profile(request):
+    return render(request, 'registration/profile.html')

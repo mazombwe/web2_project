@@ -26,7 +26,9 @@ urlpatterns = [
     path('', include('pages.urls')),
 
    
-    # path('', page_views.home , name='home'), 
+    path('accounts/', include('accounts.urls')), 
+    path('accounts/', include('django.contrib.auth.urls')), 
+
 
     # path('menu/',page_views.menu,name = 'menu'),
 

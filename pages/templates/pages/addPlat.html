@@ -8,7 +8,7 @@
         <div class="content" style="padding: 3rem 3%;">
             <h1>Nouveau Plat</h1>
 
-            <form action="{% url 'pages:addPlat' %}" method="post">
+            <form action="{% url 'pages:addPlat' %}" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form.as_p }}
                 <input type="submit" value="Submit">

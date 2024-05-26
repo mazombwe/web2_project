@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'accounts',
     'pages',
     'base',
     'django.contrib.admin',
@@ -76,22 +77,22 @@ WSGI_APPLICATION = 'Beni_East.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 DATABASES = {
     'default': {
-    'ENGINE' : 'django.db.backends.mysql',
-    'NAME' : 'benieat',
-    'USER' : 'mado',
-    'PASSWORD': DATABASE_PASSWORD,
-    'HOST' : 'localhost',
-    'PORT' : '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# DATABASES = {
+#     'default': {
+#     'ENGINE' : 'django.db.backends.mysql',
+#     'NAME' : 'benieat',
+#     'USER' : 'mado',
+#     'PASSWORD': DATABASE_PASSWORD,
+#     'HOST' : 'localhost',
+#     'PORT' : '3306',
+#     }
+# }
 
 
 
@@ -131,6 +132,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 
 
 # Default primary key field type

@@ -4,6 +4,20 @@
 
 
 {% block content %}
+  <style>
+    .navig{
+      position: fixed;
+      width: 100%;
+      padding: 2rem;
+      bottom: 5px;
+    }
+    .navig span{
+      color: gold;
+    }
+
+
+
+  </style>
 
     <main class="main">
       <header class="header">
@@ -17,7 +31,7 @@
 
 
       <section class="section" id="sectionContainer">
-        <a href="{% url "pages:addPlat" %}" id="addBtn" class="btn btn--primary btn--add">
+        <a href="{% url 'pages:addPlat' %}" id="addBtn" class="btn btn--primary btn--add">
           <span class="material-symbols-outlined"> add </span>
         </a>
         
@@ -25,11 +39,11 @@
 
             <div class="card card__product" >
                 <div class="card card__product">
-                    <img
-                        src="{% static 'img/sandwich.jpg' %}"
-                        alt="product"
-                        class="card__product-picture"
-                    />
+                    {% if plat.image %}
+                      <img src="{{ plat.image }}" alt="{{plat.nom}}" class="card__product-picture" />
+                    {% else %}
+                      <img src="{% static 'img/sandwich.jpg' %}" alt="product" class="card__product-picture" />
+                    {% endif %}
                     <div class="card__product-details" data-id="${m.id}">
                         <div class="title">
                             <span class="text text--product-title">
@@ -81,6 +95,19 @@
 
 
         {% endfor %}
+        
+        <div class="navig">
+          {% if plats.has_previous %}
+            <a href="?page={{plats.previous_page_number}}"> previous</a>
+          {% endif %}
+          <span>
+            {{ plats.number }}
+          </span>
+          {% if plats.has_next %}
+            <a href="?page={{plats.next_page_number}}"> next </a>
+          {% endif %}
+
+        </div>
         
         <!-- 
 

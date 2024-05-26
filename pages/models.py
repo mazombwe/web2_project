@@ -2,11 +2,18 @@ from django.db import models
 
 # Create your models here.
 class Plat(models.Model):
+    class Meta:
+        permissions = [
+            ("publish_plat", "can publish plat"),
+            ("sell_plat", "can sell plat"),
+            ("rate_plat", "ca rate plat")
+        ]
     id = models.AutoField(primary_key=True)
     nom = models.CharField(max_length=100)
     description = models.TextField()
     prix = models.DecimalField(max_digits=8, decimal_places=2)
     categorie = models.ForeignKey('CategoriePlat', on_delete=models.SET_NULL, null=True)
+    image = models.ImageField(upload_to="plat_images", null=True, blank=True)
     date_creation = models.DateTimeField(auto_now_add=True)
     date_update = models.DateTimeField(auto_now=True)
 

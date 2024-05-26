@@ -31,12 +31,13 @@ from django import forms
 class PlatForm(forms.ModelForm):
     class Meta:
         model = Plat
-        fields = ['nom', 'description', 'prix', 'categorie']
+        fields = ['nom', 'description', 'prix', 'categorie', 'image']
         labels = {
             'nom': 'Nom',
             'description': 'Description',
             'prix': 'Prix',
             'categorie': 'Catégorie',
+            'image': 'Photo'
         }
         widgets = {
             'description': forms.Textarea,
