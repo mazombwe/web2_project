@@ -3,7 +3,7 @@
 {% load static %}
 
 
-{% block content %}
+{% block 'content' %}
     
     <div class="full_container">
         <div class="content">
@@ -13,6 +13,10 @@
                 <a class="btn" style="margin-left:1rem"  href="{% url  'pages:contact' %}"> contact</a>
                 <a class="btn" style="margin-left:1rem"  href="{% url  'pages:about' %}"> about</a>
                 <a class="btn" style="margin-left:1rem"  href="{% url  'accounts:profile' %}"> profile</a>
+                <a href="{% url 'login' %}">
+                    <button>Login</button>
+                    </a>
+                    
 
                
             </div>

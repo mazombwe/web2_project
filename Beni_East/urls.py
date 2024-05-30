@@ -26,8 +26,11 @@ urlpatterns = [
     path('', include('pages.urls')),
 
    
-    path('accounts/', include('accounts.urls')), 
-    path('accounts/', include('django.contrib.auth.urls')), 
+   # Urls for account management
+    path('accounts/', include('accounts.urls')), # NEW
+   # NEW: path for account management
+    path('accounts/', include('django.contrib.auth.urls')),
+
 
 
     # path('menu/',page_views.menu,name = 'menu'),

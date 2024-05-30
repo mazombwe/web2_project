@@ -1,7 +1,6 @@
 {% extends 'base-template.html' %}
 
 {% block 'title' %}User Profile{% endblock %}
-
 {% block 'content' %}
 <main>
     <h1>User Profile</h1>
@@ -11,7 +10,7 @@
     <p><strong>Email:</strong> {{ user.email }}</p>
 
     <p>
-		<a href="{% url 'accounts:change-profile' %}">
+		<a href="{% url 'accounts:change_profile'%}">
 			<button>Edit Profile</button>
 		</a>
     </p>
